@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const alunosRoutes: Routes = [
   { path: 'alunos', component: AlunosComponent, children: [
-    { path: ':id/novo', component: AlunosFormComponent },
+    { path: 'novo', component: AlunosFormComponent },
     { path: ':id', component: AlunoDetalheComponent },
     { path: ':id/editar', component: AlunosFormComponent }
   ]}
