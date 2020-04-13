@@ -9,18 +9,20 @@ import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
 import { CursosService } from './cursos/cursos.service';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CursosModule
+    CursosModule,
+    AlunosModule
   ],
   providers: [AuthService, CursosService],
   bootstrap: [AppComponent]
