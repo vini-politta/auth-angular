@@ -8,8 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
 import { CursosService } from './cursos/cursos.service';
-import { CursosModule } from './cursos/cursos.module';
-import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
@@ -21,8 +19,6 @@ import { AlunosModule } from './alunos/alunos.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    CursosModule,
-    AlunosModule
   ],
   providers: [AuthService, CursosService],
   bootstrap: [AppComponent]
