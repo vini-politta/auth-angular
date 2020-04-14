@@ -25,4 +25,8 @@ export class AuthService {
     }
   }
 
+  usuarioAutenticado() {
+    return this.usuarioAuth;
+  }
+
 }
