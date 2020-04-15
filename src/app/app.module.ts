@@ -10,6 +10,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuarioListaComponent } from './usuarios/usuario-lista/usuario-lista.component';
+import { UsuariosFormComponent } from './usuarios/usuarios-form/usuarios-form.component';
+import { UsuarioModule } from './usuarios/usuario/usuario.module';
+import { UsuariosModule } from './usuarios/usuarios.module';
 
 
 
@@ -17,12 +22,17 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    UsuariosComponent,
+    UsuarioListaComponent,
+    UsuariosFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    UsuarioModule,
+    UsuariosModule,
   ],
   providers: [AuthService, AuthGuard, CursosGuard, AlunosGuard ],
   bootstrap: [AppComponent]

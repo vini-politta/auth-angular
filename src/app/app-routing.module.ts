@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { UsuarioModule } from './usuarios/usuario/usuario.module';
 
 
 const routes: Routes = [
@@ -19,6 +20,11 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     // canActivateChild: [AlunosGuard],
     loadChildren: () => import('./alunos/alunos.module').then(m => m.AlunosModule)
+  },
+
+  {
+    path: 'usuarios',
+    loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule)
   },
   { path: '', component: HomeComponent, canActivate: [AuthGuard], canActivateChild: [CursosGuard], },
   { path: 'login', component: LoginComponent }

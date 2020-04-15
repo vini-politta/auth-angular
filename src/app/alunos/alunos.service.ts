@@ -8,7 +8,7 @@ export class AlunosService {
   private alunos: any[] = [
     {id: 1, nome: 'Vinicius', email: 'vinicius@teste.com'},
     {id: 2, nome: 'Amanda', email: 'amanda@teste.com'},
-    {id: 1, nome: 'Carol', email: 'carol@teste.com'}
+    {id: 3, nome: 'Carol', email: 'carol@teste.com'}
 
   ];
 
